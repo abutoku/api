@@ -1,12 +1,38 @@
+/* googleフォント読み込み */
+
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+/* 全体のスタイル */
+
 body {
-  background: #1776D1;
-}
-h1{
-  color: #fff;
+  background:#f0f0f0;
 }
 
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ヘッダー部分 */
+header {
+  background: #1776D1;
+  width: 100%;
+  position: fixed;
+  top:0;
+}
+
+h1{
+  color: #fff;
+  font-size: 64px;
+  margin-left:24px;
+  font-family: 'Yatra One', cursive;
+}
+
+/* メイン部分 */
 #main_section {
+  margin-top: 100px;
   display: flex;
+  color: #505050;
 }
 
 form,
@@ -16,4 +42,44 @@ form,
 
 #tide_image img {
   width: 100%;
+}
+
+input {
+  width: 200px;
+  height: 24px;
+  font-size: 20px;
+  color: #505050;
+}
+
+select {
+  height: 30px;
+  font-size: 20px;
+  color: #505050;
+}
+
+#fish_name {
+  width: 300px;
+}
+
+/* ボタンのスタイル */
+#ok_btn ,
+#copy_btn {
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 72px;
+  height: 30px;
+  font-size: 20px;
+  border: 1px solid #505050;
+  text-align: center;
+}
+
+#btn_section {
+  display: flex
+}
+
+/* 出力部分 */
+#output {
+  margin-top: 24px;
+  width: 800px;
+  height: 200px;
 }

@@ -4,65 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOG writer</title>
+  <title>FISH LOG writer</title>
 
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- font-awesome読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 
 <body>
+  <header>
+    <h1>FISH LOG writer  <span class="fas fa-fish"></span></h1>
+  </header>
+  
+  <div id="wrapper">
 
-  <h1>LOG writer</h1>
+    
+    <div id="main_section">
+      
+      <form>
+        
+        <div>
+          <p>名前</p>
+          <input id="fish_name" type="text">
+        </div>
+        
+        <div>
+          <div>ポイント</div>
+          <select id="point"></select>
+        </div>
+        
+        <div>
+          <p>日付</p>
+          <input id="date" type="text">
+        </div>
+        
+        <div>
+          <p>潜水時間</p>
+          <input id="entry" type="text">〜<input id="exit" type="text">
+        </div>
+        
+        <div>
+          <p>天気</p>
+          <input id="weather" type="text">
+        </div>
 
-  <div id="main_section">
+        <div>
+          <p>気温</p>
+          <input id="temp" type="text">℃
+        </div>
 
-    <form>
+        <div>
+          <p>水温</p>
+          <input id="water_temp" type="text">℃
+        </div>
 
-      <div>
-        <div>DIVE point</div>
-        <select id="point"></select>
-      </div>
-
-      <div>
-        <p>name</p>
-        <input id="fish_name" type="text">
-      </div>
-
-      <div>
-        <p>Date</p>
-        <input id="date" type="text">
-      </div>
-
-      <div>
-        <p>weather</p>
-        <input id="weather" type="text">
-      </div>
-
-      <div>
-        <p>tide</p>
-        <input id="tide" type="text">
-        <select id="tide_move">
-          <option value="">上げ潮</option>
-          <option value="">潮止まり（満潮）</option>
-          <option value="">下げ潮</option>
-          <option value="">潮止まり（干潮）</option>
-        </select>
-      </div>
-
-      <button id ="ok_btn">OK</button>
-    </form>
-
-    <!-- 画像表示部分 -->
-    <div id="tide_image"></div>
-  </div> <!--main_sectionここまで-->
-
-  <div id="output"></div>
-
+        <div>
+          <p>水深</p>
+          <input id="depth" type="text">M
+        </div>
+        
+        <div>
+          <p>潮</p>
+          <input id="tide" type="text">
+          <select id="tide_type">
+            <option value="上げ潮">上げ潮</option>
+            <option value="潮止まり（満潮）">潮止まり（満潮）</option>
+            <option value="">下げ潮</option>
+            <option value="">潮止まり（干潮）</option>
+          </select>
+        </div>
+        
+        <div id="btn_section">
+          <div id ="ok_btn">OK</div>
+          <div id ="copy_btn">COPY</div>
+        </div>
+      </form>
+      
+      <!-- 画像表示部分 -->
+      <div id="tide_image"></div>
+    </div> <!--main_sectionここまで-->
+    
+    <div id="output"></div>
+    
+  </div><!--wrapperここまで-->
 
 
 <!-- jquery読み込み -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- axiosライブラリの読み込み -->
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 
 <script src="./js/main.js"></script>
 

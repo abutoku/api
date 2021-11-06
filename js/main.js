@@ -175,6 +175,7 @@ $('#ok_btn').on('click', function () {
       `<h2>${name}</h2>
       <p>ポイント: ${point}</P>
       <p>${date}</p>
+      <p>潜水時間: ${entry} 〜 ${exit} </P>
       <p>天気:${weather}</p>
       <p>気温:${temp}℃</p>
       <p>水温:${water_temp}℃</p>

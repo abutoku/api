@@ -1,0 +1,19 @@
+body {
+  background: #1776D1;
+}
+h1{
+  color: #fff;
+}
+
+#main_section {
+  display: flex;
+}
+
+form,
+#tide_image {
+  width: 50%;
+}
+
+#tide_image img {
+  width: 100%;
+}

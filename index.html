@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOG writer</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <h1>LOG writer</h1>
+
+  <div id="main_section">
+
+    <form>
+
+      <div>
+        <div>DIVE point</div>
+        <select id="point"></select>
+      </div>
+
+      <div>
+        <p>name</p>
+        <input id="fish_name" type="text">
+      </div>
+
+      <div>
+        <p>Date</p>
+        <input id="date" type="text">
+      </div>
+
+      <div>
+        <p>weather</p>
+        <input id="weather" type="text">
+      </div>
+
+      <div>
+        <p>tide</p>
+        <input id="tide" type="text">
+        <select id="tide_move">
+          <option value="">上げ潮</option>
+          <option value="">潮止まり（満潮）</option>
+          <option value="">下げ潮</option>
+          <option value="">潮止まり（干潮）</option>
+        </select>
+      </div>
+
+      <button id ="ok_btn">OK</button>
+    </form>
+
+    <!-- 画像表示部分 -->
+    <div id="tide_image"></div>
+  </div> <!--main_sectionここまで-->
+
+  <div id="output"></div>
+
+
+
+<!-- jquery読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- axiosライブラリの読み込み -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
